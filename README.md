@@ -2,6 +2,21 @@
 
 Simple HUD and Car HUD for Various Framework
 
+
+## All Components
+![LGF HUD1](https://i.ibb.co/qDVN2C0/2.png)
+
+### Hud Stats
+![LGF HUD2](https://i.ibb.co/mXJS9TL/image.png)
+
+## Notifications
+![LGF HUD3](https://i.ibb.co/54qn6pY/5-removebg-preview.png)
+![LGF HUD4](https://i.ibb.co/LvDpLFf/3-removebg-preview.png)
+![LGF HUD5](https://i.ibb.co/cQXSb3S/4-removebg-preview.png)
+![LGF HUD6](https://i.ibb.co/tDSMJhH/image-removebg-preview-7.png)
+
+
+
 ## Framework Compatibility
 
 - OX Core
