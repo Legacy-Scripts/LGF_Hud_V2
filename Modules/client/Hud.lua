@@ -83,9 +83,7 @@ RegisterNetEvent("LGF_Hud:PlayerLoaded", function()
     end
 end)
 
-RegisterCommand("arm", function ()
-    SetPedArmour(cache.ped, 0.0)
-end)
+
 
 RegisterNetEvent("LGF_Hud:PlayerUnloaded", function()
     Nui.toggleNui("openHud", { Visible = false, PlayerData = {} })
