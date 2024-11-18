@@ -16,5 +16,14 @@ Locales = {
         Error = "Comando non valido. Usa 'on' per abilitare l'HUD o 'off' per disabilitarlo.",
         ProximityChanged = "La distanza di prossimità è cambiata a: %s",
         Proximity = "Range Vocale",
+    },
+    nl = {
+        HUDLoaded = "De HUD-componenten zijn succesvol geladen en zijn nu zichtbaar. Veel plezier!",
+        HUDUnloaded = "De HUD-componenten zijn succesvol uitgeschakeld. Je kunt ze op elk moment weer inschakelen.",
+        HUDDisabled = "De HUD is uitgeschakeld en de minimap is verborgen. Je kunt deze weer inschakelen met het commando 'hud on'.",
+        HUDEnabled = "De HUD en minimap zijn ingeschakeld. Je kunt nu de belangrijke gegevens op het scherm zien.",
+        Error = "Ongeldig commando. Gebruik 'on' om de HUD in te schakelen of 'off' om deze uit te schakelen.",
+        ProximityChanged = "Stem bereik is gewijzigd naar: %s",
+        Proximity = "Bereik",
     }
 }
