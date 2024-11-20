@@ -90,12 +90,7 @@ if Path == 'client' then
         AddEventHandler('esx:playerLoaded', function(...)
             TriggerEvent("LGF_Hud:PlayerLoaded", ...)
         end)
-    elseif Core == "qb-core" then
-        RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
-        AddEventHandler('QBCore:Client:OnPlayerLoaded', function(...)
-            TriggerEvent("LGF_Hud:PlayerLoaded", ...)
-        end)
-    elseif Core == "qbx-core" then
+    elseif Core == "qb-core" or Core == "qbx-core" then
         RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
         AddEventHandler('QBCore:Client:OnPlayerLoaded', function(...)
             TriggerEvent("LGF_Hud:PlayerLoaded", ...)
@@ -116,12 +111,7 @@ if Path == 'client' then
         AddEventHandler('esx:onPlayerLogout', function(...)
             TriggerEvent("LGF_Hud:PlayerUnloaded", ...)
         end)
-    elseif Core == "qb-core" then
-        RegisterNetEvent('QBCore:Client:OnPlayerUnload')
-        AddEventHandler('QBCore:Client:OnPlayerUnload', function(...)
-            TriggerEvent("LGF_Hud:PlayerUnloaded", ...)
-        end)
-    elseif Core == "qbx-core" then
+    elseif Core == "qb-core" or Core == "qbx-core" then
         RegisterNetEvent('QBCore:Client:OnPlayerUnload')
         AddEventHandler('QBCore:Client:OnPlayerUnload', function(...)
             TriggerEvent("LGF_Hud:PlayerUnloaded", ...)
