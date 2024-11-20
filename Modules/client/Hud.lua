@@ -76,6 +76,8 @@ end
 
 --[[EVENTS]]
 RegisterNetEvent("LGF_Hud:PlayerLoaded", function()
+    -- prevent premature loading
+    Wait(700)
     BuildHUD(true)
     Functions.loadMinimap(true)
     if Config.EnableNotificationEvent then
