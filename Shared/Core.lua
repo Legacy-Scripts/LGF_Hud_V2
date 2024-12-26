@@ -74,6 +74,7 @@ if Path == 'client' then
     end
 
     if Core == "LEGACYCORE" then
+        RegisterNetEvent('LegacyCore:PlayerLoaded')
         AddEventHandler('LegacyCore:PlayerLoaded', function(...)
             TriggerEvent("LGF_Hud:PlayerLoaded", ...)
         end)
