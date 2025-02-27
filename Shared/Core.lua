@@ -17,8 +17,6 @@ elseif GetResourceState("qb-core") ~= "missing" then
     Core = "qb-core"
     QBCore = exports['qb-core']:GetCoreObject()
     GetCore:resolve({ "qb-core", "GetCoreObject" })
-elseif GetResourceState("qbx-core") ~= "missing" then
-    Core = "qbx-core"
 elseif GetResourceState("ox_core") ~= "missing" then
     Core = "ox"
     OxCore = require '@ox_core/lib/init'
@@ -46,9 +44,6 @@ if Path == 'client' then
         elseif Core == "qb-core" then
             local Data = QBCore.Functions.GetPlayerData()
             return Data and Data.metadata.thirst
-        elseif Core == "qbx-core" then
-            local Data = QBX.PlayerData
-            return Data and Data.metadata.thirst
         elseif Core == "ox" then
             local player = OxCore.GetPlayer()
             return player.getStatus("thirst")
@@ -72,9 +67,6 @@ if Path == 'client' then
         elseif Core == "qb-core" then
             local Data = QBCore.Functions.GetPlayerData()
             return Data and Data.metadata.hunger
-        elseif Core == "qbx-core" then
-            local Data = QBX.PlayerData
-            return Data and Data.metadata.hunger
         elseif Core == "ox" then
             local player = OxCore.GetPlayer()
             return player.getStatus("hunger")
@@ -91,7 +83,7 @@ if Path == 'client' then
         AddEventHandler('esx:playerLoaded', function(...)
             TriggerEvent("LGF_Hud:PlayerLoaded", ...)
         end)
-    elseif Core == "qb-core" or Core == "qbx-core" then
+    elseif Core == "qb-core" then
         RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
         AddEventHandler('QBCore:Client:OnPlayerLoaded', function(...)
             TriggerEvent("LGF_Hud:PlayerLoaded", ...)
@@ -112,7 +104,7 @@ if Path == 'client' then
         AddEventHandler('esx:onPlayerLogout', function(...)
             TriggerEvent("LGF_Hud:PlayerUnloaded", ...)
         end)
-    elseif Core == "qb-core" or Core == "qbx-core" then
+    elseif Core == "qb-core" then
         RegisterNetEvent('QBCore:Client:OnPlayerUnload')
         AddEventHandler('QBCore:Client:OnPlayerUnload', function(...)
             TriggerEvent("LGF_Hud:PlayerUnloaded", ...)

@@ -8,15 +8,6 @@ Locales = {
         ProximityChanged = "The proximity distance has changed to: %s", 
         Proximity = "Proximity Range",
     },
-    fr = {
-        HUDLoaded = "Les composants de l'HUD ont été chargés avec succès et sont désormais visibles. Bonne expérience !",
-        HUDUnloaded = "Les composants de l'HUD ont été déchargés avec succès. Vous pouvez les réactiver à tout moment.",
-        HUDDisabled = "L'HUD a été désactivé et la minicarte est masquée. Vous pouvez le réactiver à l'aide de la commande '/hud on'.",
-        HUDEnabled = "L'HUD et la minicarte ont été activés. Vous pouvez désormais voir les données importantes à l'écran.",
-        Error = "Commande invalide. Veuillez utiliser 'on' pour activer le HUD ou 'off' pour le désactiver.",
-        ProximityChanged = "La Portée de proximité à été changé à : %s",
-        Proximity = "Portée de Proximité",
-    },
     it = {
         HUDLoaded = "I componenti dell'HUD sono stati caricati correttamente e sono ora visibili. Buona esperienza!",
         HUDUnloaded = "I componenti dell'HUD sono stati scaricati correttamente. Puoi riattivarli in qualsiasi momento.",
